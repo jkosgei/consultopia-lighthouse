@@ -34,8 +34,32 @@ const Index = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto">
+            <div className="md:w-1/2">
+              <img 
+                src="/lovable-uploads/a7d114a0-0d17-4734-815c-6e5c0bc9a787.png"
+                alt="Financial Consultant"
+                className="rounded-lg shadow-xl w-full max-w-md mx-auto"
+              />
+            </div>
+            <div className="md:w-1/2">
+              <h2 className="text-3xl font-bold mb-6 text-primary">Your Trusted Financial Advisor</h2>
+              <p className="text-lg text-gray-700 mb-6">
+                With years of experience in financial consulting, I specialize in helping small business owners and individuals achieve their financial goals through comprehensive credit building, debt management, and business capital solutions.
+              </p>
+              <p className="text-lg text-gray-700">
+                My personalized approach ensures that each client receives tailored strategies that align with their unique financial objectives and circumstances.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
-      <section id="services" className="py-20">
+      <section id="services" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -51,10 +75,10 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-gray-100 py-20">
+      <section id="contact" className="bg-white py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Start Your Financial Journey</h2>
-          <div className="bg-white p-8 rounded-lg shadow-md max-w-md mx-auto">
+          <div className="bg-gray-50 p-8 rounded-lg shadow-md max-w-md mx-auto">
             <LeadForm />
           </div>
         </div>
