@@ -4,37 +4,16 @@ import { Building2, Wallet, PiggyBank, Home, Car, Calculator, BadgeDollarSign, L
 
 const services = [
   { icon: Building2, title: "Business Credit Building", description: "Establish and improve your business credit profile" },
-  { icon: Wallet, title: "Credit Repair", description: "Professional credit restoration services" },
+  { icon: Wallet, title: "Credit Building", description: "Professional credit building services" },
   { icon: PiggyBank, title: "Debt Management", description: "Strategic debt management solutions" },
   { icon: BadgeDollarSign, title: "Business Capital Readiness", description: "Prepare your business for funding opportunities" },
-  { icon: ClipboardCheck, title: "Loan Application Assistance", description: "Expert guidance through the loan process" },
-  { icon: LineChart, title: "Debt Restructuring", description: "Optimize your debt structure" },
   { icon: Calculator, title: "Budgeting Services", description: "Personal and business budget planning" },
   { icon: Car, title: "Auto Purchase Assistance", description: "Vehicle financing and acquisition support" },
   { icon: Home, title: "Home Purchase Readiness", description: "Prepare for homeownership" },
-];
-
-const insuranceServices = [
-  { 
-    icon: Shield, 
-    title: "Mortgage Protection", 
-    description: "Protect the equity on your home. Ensure your family keeps their home no matter what life brings." 
-  },
-  { 
-    icon: Clock, 
-    title: "Retirement Planning", 
-    description: "Build liquidity for your emergencies and opportunities. Have cash available in retirement when you need it most." 
-  },
-  { 
-    icon: Heart, 
-    title: "Last Expense", 
-    description: "Helps reduce the burden to your family once you're gone. Have monies set aside for last expense." 
-  },
-  { 
-    icon: Gift, 
-    title: "Legacy Planning", 
-    description: "Leave a gift for grandchildren and family. Build a lasting financial legacy for the ones you love." 
-  },
+  { icon: Shield, title: "Mortgage Protection", description: "Protect the equity on your home. Ensure your family keeps their home no matter what life brings." },
+  { icon: Clock, title: "Retirement Planning", description: "Build liquidity for your emergencies and opportunities. Have cash available in retirement when you need it most." },
+  { icon: Heart, title: "Last Expense", description: "Helps reduce the burden to your family once you're gone. Have monies set aside for last expense." },
+  { icon: Gift, title: "Legacy Planning", description: "Leave a gift for grandchildren and family. Build a lasting financial legacy for the ones you love." },
 ];
 
 const Index = () => {
@@ -103,25 +82,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Insurance Services Section */}
-      <section id="insurance" className="py-20 bg-[#1A1F2C] relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#403E43]/20 to-transparent" />
-        <div className="container mx-auto px-4 relative">
-          <h2 className="text-4xl font-bold text-center mb-4 text-white">Insurance Services</h2>
-          <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
-            Protect what matters most with our comprehensive insurance solutions designed to secure your family's future.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {insuranceServices.map((service, index) => (
-              <div key={index} className="bg-[#403E43]/50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-[#9b87f5]/20">
-                <service.icon className="w-12 h-12 text-[#9b87f5] mb-4" />
-                <h3 className="text-xl font-semibold mb-2 text-white">{service.title}</h3>
-                <p className="text-gray-300">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
+
 
       {/* Contact Section */}
       <section id="contact" className="bg-[#1A1F2C] py-20 relative">
