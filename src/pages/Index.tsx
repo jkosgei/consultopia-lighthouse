@@ -1,19 +1,14 @@
 import Navbar from "@/components/Navbar";
 import LeadForm from "@/components/LeadForm";
-import { Building2, Wallet, PiggyBank, Home, Car, Calculator, BadgeDollarSign, LineChart, ClipboardCheck, Shield, HomeIcon, Clock, Heart, Gift } from "lucide-react";
+import { Wallet, PiggyBank, Home, Car, Calculator, BadgeDollarSign } from "lucide-react";
 
 const services = [
-  { icon: Building2, title: "Business Credit Building", description: "Establish and improve your business credit profile" },
   { icon: Wallet, title: "Credit Building", description: "Professional credit building services" },
-  { icon: PiggyBank, title: "Debt Management", description: "Strategic debt management solutions" },
-  { icon: BadgeDollarSign, title: "Business Capital Readiness", description: "Prepare your business for funding opportunities" },
   { icon: Calculator, title: "Budgeting Services", description: "Personal and business budget planning" },
+  { icon: BadgeDollarSign, title: "Business Capital Readiness", description: "Prepare your business for funding opportunities" },
+  { icon: PiggyBank, title: "Debt Management", description: "Strategic debt management solutions" },
   { icon: Car, title: "Auto Purchase Assistance", description: "Vehicle financing and acquisition support" },
   { icon: Home, title: "Home Purchase Readiness", description: "Prepare for homeownership" },
-  { icon: Shield, title: "Mortgage Protection", description: "Protect the equity on your home. Ensure your family keeps their home no matter what life brings." },
-  { icon: Clock, title: "Retirement Planning", description: "Build liquidity for your emergencies and opportunities. Have cash available in retirement when you need it most." },
-  { icon: Heart, title: "Last Expense", description: "Helps reduce the burden to your family once you're gone. Have monies set aside for last expense." },
-  { icon: Gift, title: "Legacy Planning", description: "Leave a gift for grandchildren and family. Build a lasting financial legacy for the ones you love." },
 ];
 
 const Index = () => {
