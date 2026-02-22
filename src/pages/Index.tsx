@@ -1,8 +1,12 @@
 import Navbar from "@/components/Navbar";
 import LeadForm from "@/components/LeadForm";
-import { Wallet, PiggyBank, Home, Car, Calculator, BadgeDollarSign } from "lucide-react";
+import { Wallet, PiggyBank, Home, Car, Calculator, BadgeDollarSign, Shield, Clock, Heart, Gift } from "lucide-react";
 
 const services = [
+  { icon: Shield, title: "Insurance Services", description: "Safeguarded against unexpected life events" },
+  { icon: Home, title: "Mortgage Protection", description: "Protect the equity on your home" },
+  { icon: Clock, title: "Retirement Planning", description: "Build liquidity for your emergencies, opportunities, and have cash in retirement" },
+  { icon: Heart, title: "Last Expense", description: "Helps reduce the burden to your family once you're gone. Have monies set aside for last expense. Leave a gift for grandchildren and family." },
   { icon: Wallet, title: "Credit Building", description: "Professional credit building services" },
   { icon: Calculator, title: "Budgeting Services", description: "Personal and business budget planning" },
   { icon: BadgeDollarSign, title: "Business Capital Readiness", description: "Prepare your business for funding opportunities" },
